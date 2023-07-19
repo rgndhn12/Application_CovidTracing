@@ -3,26 +3,30 @@
 import tkinter as tk
 
 #second window
-top = tk.Tk()
-top.geometry("500x500")
-top.title (" COVID TRACING APP ")
+top_2 = tk.Tk()
+top_2.geometry("1000x1500")
+top_2.title (" COVID TRACING APP ")
+top_2['background'] = 'black'
 
-frst_label = tk.Label(top, text= " Your Information... ", font=("Avenir",25)) 
-frst_label.grid(row=2, column=3)
+frst_label = tk.Label(top_2, text= " YOUR INFORMATION... ", font=("Avenir",25)) 
+frst_label.pack(padx=30, pady=30)
 
-scnd_label = tk.Label(top,text="Full Name:")
-scnd_label.grid(row=500, column=3)
+scnd_label = tk.Label(top_2,text="Full Name:")
+scnd_label.pack(padx=5, pady=40)
 
-thrd_label = tk.Label(top,text="Your Contact Number:")
-thrd_label.grid(row=502, column=3)
+thrd_label = tk.Label(top_2,text="Age:")
+thrd_label.pack(padx=5, pady=41)
 
-frth_label = tk.Label(top,text="Age:")
-frth_label.grid(row=504, column=3)
+frth_label = tk.Label(top_2,text="Your Contact Number:")
+frth_label.pack(padx=5, pady=42)
 
-ffth_label = tk.Label(top,text="Person to contact in case of emergency:")
-ffth_label.grid(row=506, column=3)
+ffth_label = tk.Label(top_2,text="Person to contact in case of emergency:")
+ffth_label.pack(padx=5, pady=43)
 
-sxth_label = tk.Label(top,text="His/Her Contact Number:")
-sxth_label.grid(row=508, column=3)
+sxth_label = tk.Label(top_2,text="His/Her Contact Number:")
+sxth_label.pack(padx=5, pady=44)
 
-top.mainloop()
+svth_label = tk.Label(top_2,text="Are you experiencing any symptoms of COVID-19 for the past 7 days?(Y/N):")
+svth_label.pack(padx=5, pady=45)
+
+top_2.mainloop()
