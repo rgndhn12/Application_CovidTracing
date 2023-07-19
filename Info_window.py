@@ -29,4 +29,10 @@ sxth_label.pack(padx=5, pady=44)
 svth_label = tk.Label(top_2,text="Are you experiencing any symptoms of COVID-19 for the past 7 days?(Y/N):")
 svth_label.pack(padx=5, pady=45)
 
+sec_btn1 = tk.Button (top_2,text="Submit Entry")                 
+sec_btn1.pack(padx=65, pady=65)
+
+sec_btn2 = tk.Button (top_2, text="Back")
+sec_btn2.pack(padx=70, pady=70)
+
 top_2.mainloop()
