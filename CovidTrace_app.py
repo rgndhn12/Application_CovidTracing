@@ -8,7 +8,7 @@
 
 import tkinter as tk
 
-#window
+# main window
 
 top = tk.Tk()
 top.geometry("1000x1000")
@@ -21,8 +21,7 @@ main_label = tk.Label(top, text= " HEALTH MATTERS ", font=("Arial",40),
                       bg="black",fg="Pink")
 main_label.pack(padx=30, pady=30)
 
-
-main_btn1 = tk.Button (top,text="Add Entry")                  
+main_btn1 = tk.Button (top,text="Add Entry")                 
 main_btn1.pack(padx=50, pady=50)
 
 
