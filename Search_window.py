@@ -25,13 +25,16 @@ class SearchWindow:
 
     def search(self):
         contacts = []
+        check_contact = self.__search_entry()
+        valid_contact = [] 
+
         with open("user_contacts.txt") as user_contacts_file:
             for line in user_contacts_file:
                 contacts.append(line.strip().split(','))
 
-        print(f"Your searched entry:{contacts}")
-            
-
+        for contact in contacts:
+            if check_contact in contact:
+                valid_contact.append(contact) 
 
 
 
