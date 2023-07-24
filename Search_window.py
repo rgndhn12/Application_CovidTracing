@@ -12,7 +12,7 @@ class SearchWindow:
 
     def make_form(self):
         search_label = Label(self.__frame, text="Enter the submitted Name:")
-        search_label.pack
+        search_label.pack()
 
         self.__search_entry = Entry(self.__frame)
         self.__search_entry.pack()
