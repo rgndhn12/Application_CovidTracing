@@ -17,15 +17,20 @@ class SearchWindow:
         self.__search_entry = Entry(self.__frame)
         self.__search_entry.pack()
 
-        search_btn = Button(self.__frame, text="Search", command=self.__search_entry)
+        search_btn = Button(self.__frame, text="Search", command=self.search)
         search_btn.pack()
+
+        exit_btn = Button(self.__frame, text="Exit", command=exit)
+        exit_btn.pack()
 
     def search(self):
         contacts = []
         with open("user_contacts.txt") as user_contacts_file:
             for line in user_contacts_file:
-                contacts.append(line.strip().split(',')) 
+                contacts.append(line.strip().split(','))
+
         print(f"Your searched entry:{contacts}")
+            
 
 
 
