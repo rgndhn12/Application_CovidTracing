@@ -25,7 +25,7 @@ class SearchWindow:
 
     def search(self):
         contacts = []
-        check_contact = self.__search_entry.get()
+        check_contact = self.__search_entry().get()
         valid_contact = [] 
 
         with open("user_contacts.txt") as user_contacts_file:
