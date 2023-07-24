@@ -27,7 +27,9 @@ main_label.pack(padx=30, pady=30)
 main_btn1 = tk.Button (top,text="Add Entry", command=lambda:(show_user_info(top)))                
 main_btn1.pack(padx=50, pady=50)
 
-main_btn2 = tk.Button (top, text="Search Entry")
+def create_search_window():
+    search_window = SearchWindow(top)
+main_btn2 = tk.Button (top, text="Search Entry", command=create_search_window)
 main_btn2.pack(padx=100, pady=100)
 
 top.mainloop()

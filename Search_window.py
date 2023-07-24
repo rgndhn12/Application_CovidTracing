@@ -2,7 +2,7 @@ from tkinter import *
 
 class SearchWindow:
     def __init__(self, master):
-        self.master = master
+        self.__master = master
         print(master)
         self.__window = Toplevel(self.__master)
         self.__frame = Frame(self.__window)
