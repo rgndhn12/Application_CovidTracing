@@ -14,4 +14,4 @@ class OutputWindow:
 
         self.__label = Label(self.__window)
         self.__label.configure(text=self.__output)
-        self.__label.pack()
+        self.__label.pack(padx=50, pady=50)
