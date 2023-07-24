@@ -2,6 +2,12 @@
 
 import tkinter as tk
 
+def submit_user_info(entries):
+    user_values = []
+    for entry in entries:
+        entry_value = entry.get()
+        user_values.append(entry_value)
+
 def show_user_info(top):
     top_2 = tk.Toplevel(top)
     top_2['background'] = 'black'
