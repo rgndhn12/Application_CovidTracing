@@ -20,6 +20,14 @@ class SearchWindow:
         search_btn = Button(self.__frame, text="Search", command=self.__search_entry)
         search_btn.pack()
 
+    def search(self):
+        contacts = []
+        with open("user_contacts.txt") as user_contacts_file:
+            for line in user_contacts_file:
+                contacts.append(line.strip().split(',')) 
+        
+
+
 
 
         
