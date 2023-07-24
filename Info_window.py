@@ -8,6 +8,10 @@ def submit_user_info(entries):
         entry_value = entry.get()
         user_values.append(entry_value)
 
+    with open("user_contacts.txt", "a") as user_contacts_file:
+        condensed_user_values = ",".join(user_values)
+        user_contacts_file.write(f"{condensed_user_values}\n")
+
 def show_user_info(top):
     top_2 = tk.Toplevel(top)
     top_2['background'] = 'black'
@@ -50,6 +54,8 @@ def show_user_info(top):
 
     svth_entry = tk.Entry(top_2)
     svth_entry.pack(padx=1, pady=22)
+
+    entries = [scnd_entry, thrd_entry, frth_entry, ffth_entry, sxth_entry, svth_entry]
 
     sec_btn1 = tk.Button (top_2,text="Submit Entry")                 
     sec_btn1.pack(padx=65, pady=65)
