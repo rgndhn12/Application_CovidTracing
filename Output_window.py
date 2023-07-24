@@ -6,10 +6,12 @@ class OutputWindow:
         self.__output = output
         print(output)
 
+        self.make_output()
+
         self.__window.mainloop()
     
     def make_output(self):
 
         self.__label = Label(self.__window)
-        self.__label(text=self.__output)
+        self.__label.configure(text=self.__output)
         self.__label.pack()
