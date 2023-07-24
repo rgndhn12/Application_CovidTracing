@@ -1,4 +1,5 @@
 from tkinter import *
+from Output_window import OutputWindow
 
 class SearchWindow:
     def __init__(self, master):
@@ -25,7 +26,7 @@ class SearchWindow:
 
     def search(self):
         contacts = []
-        check_contact = self.__search_entry().get()
+        check_contact = self.__search_entry.get()
         valid_contact = [] 
 
         with open("user_contacts.txt") as user_contacts_file:
@@ -35,7 +36,9 @@ class SearchWindow:
         for contact in contacts:
             if check_contact in contact:
                 valid_contact.append(contact)
-        print(valid_contact) 
+
+        OutputWindow(self.__window, valid_contact[0])
+
 
 
 
