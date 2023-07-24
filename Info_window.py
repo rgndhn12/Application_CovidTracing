@@ -57,7 +57,7 @@ def show_user_info(top):
 
     entries = [scnd_entry, thrd_entry, frth_entry, ffth_entry, sxth_entry, svth_entry]
 
-    sec_btn1 = tk.Button (top_2,text="Submit Entry")                 
+    sec_btn1 = tk.Button (top_2,text="Submit Entry", command=lambda:submit_user_info(entries))                 
     sec_btn1.pack(padx=65, pady=65)
 
     sec_btn2 = tk.Button (top_2, text="Back")
