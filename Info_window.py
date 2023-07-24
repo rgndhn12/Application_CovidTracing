@@ -16,7 +16,7 @@ def show_user_info(top):
     top_2 = tk.Toplevel(top)
     top_2['background'] = 'black'
 
-    frst_label = tk.Label(top_2, text= " YOUR INFORMATION... ", font=("Avenir",25)) 
+    frst_label = tk.Label(top_2, text= " YOUR INFORMATION ", font=("Avenir",25)) 
     frst_label.pack(padx=30, pady=30)
 
     scnd_label = tk.Label(top_2,text="Full Name:")
@@ -60,7 +60,7 @@ def show_user_info(top):
     sec_btn1 = tk.Button (top_2,text="Submit Entry", command=lambda:submit_user_info(entries))                 
     sec_btn1.pack(padx=65, pady=65)
 
-    sec_btn2 = tk.Button (top_2, text="Back")
+    sec_btn2 = tk.Button (top_2, text="Exit",command=exit)
     sec_btn2.pack(padx=70, pady=70)
 
     top_2.mainloop()

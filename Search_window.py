@@ -25,7 +25,7 @@ class SearchWindow:
         with open("user_contacts.txt") as user_contacts_file:
             for line in user_contacts_file:
                 contacts.append(line.strip().split(',')) 
-        
+        print(f"Your searched entry:{contacts}")
 
 
 
