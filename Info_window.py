@@ -14,6 +14,7 @@ def submit_user_info(entries):
 
 def show_user_info(top):
     top_2 = tk.Toplevel(top)
+    top_2.geometry("1000x1500")
     top_2['background'] = 'black'
 
     frst_label = tk.Label(top_2, text= " YOUR INFORMATION ", font=("Avenir",25)) 
